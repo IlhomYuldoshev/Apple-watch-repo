@@ -279,13 +279,37 @@ img {
   padding: 70px 0;
 }
 
-.sell-container {
+.sell-container-inner{
   padding-top: 106px;
   padding-bottom: 106px;
+  width: 100%;
   background-image: url(../img/watch-in-hand.jpg);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: right;
+}
+
+.current-block-right{
+  margin-left: auto;
+}
+
+
+/* BG SECTION */
+.bg-section{
+  padding-top: 240px;
+  padding-bottom: 240px;
+  background-image: url(../img/runners.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right;
+}
+.bg-section-heading{
+  color:#fff;
+}
+
+.bg-section-text{
+  color:#fff;
+  border-left: 3px solid #fff;
 }
 
 /* RETINA BG IMAGE */
@@ -299,7 +323,10 @@ only screen and (                min-resolution: 2dppx) {
   .hero{
     background-image: url(../img/apple-watch@2x.jpg);
   }
-  .sell-container{
+  .sell-container-inner{
     background-image: url(../img/watch-in-hand@2x.jpg);
+  }
+  .bg-section{
+    background-image: url(../img/runners@2x.jpg);
   }
 }
