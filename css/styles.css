@@ -90,6 +90,7 @@ img {
   width: 35px;
   height: 42px;
   display: block;
+  object-fit: contain;
 }
 
 .site-header-list {
@@ -110,7 +111,9 @@ img {
   margin-left: 40px;
 }
 
+
 .site-header-link {
+  position: relative;
   text-decoration: none;
   font-size: 15px;
   line-height: 23px;
@@ -130,4 +133,153 @@ img {
 .active-link{
   color:#666;
   border-bottom: 1px solid #333;
+}
+
+
+/* HERO */
+.hero {
+  padding-top: 91px;
+  padding-bottom: 185px;
+  background-image: url(../img/apple-watch.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: right;
+  border-bottom: 2px solid #ddd;;
+}
+
+.hero-inner {
+  width: 490px;
+}
+
+.hero-heading{
+  margin-top: 0;
+  margin-bottom: 30px;
+  font-size: 50px;
+  line-height: 60px;
+  font-weight: 700;
+  color:#000;
+}
+
+.hero-text{
+  margin-top: 0;
+  margin-bottom: 30px;
+  padding-left: 40px;
+  border-left: 3px solid #888;
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 39px;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 27px;
+}
+.btn:hover{
+  opacity: 0.8;
+}
+.btn:active{
+  opacity: 0.6;
+}
+.btn-danger {
+  background-color:#EA625C;
+  color:#fff;
+}
+
+
+/* FEATURES */
+.features {
+  padding-top: 70px;
+  padding-bottom: 70px;
+  font-size: 15px;
+  line-height: 24px;
+  font-weight: 400;
+  color:#333;
+  margin-bottom: 70px;
+}
+
+.features-list {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  display: flex;
+
+}
+.features-item{
+  width: 100%;
+  max-width: 280px;
+}
+
+.features-item:not(:last-child) {
+  margin-right: 80px;
+}
+
+.features-title {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 27px;
+  color:#000;
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+
+.features-text {
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.squares {
+  display: flex;
+}
+
+.square {
+  width: 8px;
+  height: 8px;
+  background-color:#ddd;
+  margin-right: 10px;
+}
+
+.more-link {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+
+.more-link:hover{
+  opacity: 0.8;
+}
+
+.more-link:active{
+  opacity: 0.6;
+}
+
+.more-link-inner{
+  font-size: 16px;
+  line-height: 26px;
+  color:#EA625C;
+  font-weight: 700;
+}
+
+.more-link::before{
+  width: 40px;
+  height: 3px;
+  background-color:#EA625C;
+  margin-right: 10px;
+  content: "";
+}
+
+
+
+/* RETINA BG IMAGE */
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) { 
+  .hero{
+    background-image: url(../img/apple-watch@2x.jpg);
+  }
 }
