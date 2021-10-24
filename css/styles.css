@@ -169,7 +169,9 @@ img {
   background-repeat: no-repeat;
   background-size: contain;
   background-position: right;
-  border-bottom: 2px solid #ddd;;
+  border-bottom: 2px solid #ddd;
+  max-width: 1920px;
+  margin: 0 auto;
 }
 
 .current-block-inner {
