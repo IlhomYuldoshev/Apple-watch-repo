@@ -301,7 +301,7 @@ img {
   background-image: url(../img/runners.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: right;
+  background-position: center top;
 }
 .bg-section-heading{
   color:#fff;
